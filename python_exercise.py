@@ -1,3 +1,5 @@
+import string
+
 def fizzbizz():
     n = int(input("Enter a number: "))
     for i in range(1,n+1):
@@ -16,9 +18,16 @@ def palindrome(s):
     else:
         return False
 
-        
+def panagram(s):
+    alphabets=list(string.ascii_lowercase)
+    s = s.lower()
+    for letter in alphabets:
+        if letter not in s:
+            return False
+    return True
     
 
 
 fizzbizz()
 print(palindrome('malayalam'))
+print(panagram("the quick brown fox jumps over the lazy dog"))
