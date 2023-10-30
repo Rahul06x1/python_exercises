@@ -10,8 +10,8 @@ def fizzbizz():
         else:
             print(i)
 
-def palindrome(str):
-    if str == str[::-1]:
+def palindrome(s):
+    if s == s[::-1]:
         return True
     else:
         return False
