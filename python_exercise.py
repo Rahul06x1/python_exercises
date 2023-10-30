@@ -19,15 +19,27 @@ def palindrome(s):
         return False
 
 def panagram(s):
-    alphabets=list(string.ascii_lowercase)
+    alphabets = list(string.ascii_lowercase)
     s = s.lower()
     for letter in alphabets:
         if letter not in s:
             return False
     return True
-    
+
+def freq(s):
+    dict = {}
+    characters = list(string.printable)
+    for charactor in characters:
+        count = 0
+        for i in s:
+            if i == charactor:
+                count += 1
+                dict[i] = count
+    return dict
+
 
 
 fizzbizz()
 print(palindrome('malayalam'))
 print(panagram("the quick brown fox jumps over the lazy dog"))
+print(freq("the quick brown fox jumps over the lazy dog"))
