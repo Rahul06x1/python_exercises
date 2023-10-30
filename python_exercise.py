@@ -10,4 +10,15 @@ def fizzbizz():
         else:
             print(i)
 
+def palindrome(str):
+    if str == str[::-1]:
+        return True
+    else:
+        return False
+
+        
+    
+
+
 fizzbizz()
+print(palindrome('malayalam'))
