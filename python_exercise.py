@@ -1,7 +1,6 @@
 import string
 
-def fizzbizz():
-    n = int(input("Enter a number: "))
+def fizzbizz(n):
     for i in range(1,n+1):
         if i%15==0:
             print('fizzbizz')
@@ -39,7 +38,7 @@ def freq(s):
 
 
 
-fizzbizz()
+fizzbizz(9)
 print(palindrome('malayalam'))
 print(panagram("the quick brown fox jumps over the lazy dog"))
 print(freq("the quick brown fox jumps over the lazy dog"))
