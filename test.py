@@ -10,6 +10,9 @@ class TestPalindrome(unittest.TestCase):
     def test_not_palindrome(self):
         sentence = "sentence"
         self.assertFalse(palindrome(sentence))
+    
+    def test_null_input(self):
+        self.assertTrue(palindrome(""))
 
 
 class TestFreq(unittest.TestCase):
