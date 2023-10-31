@@ -7,6 +7,11 @@ class TestPalindrome(unittest.TestCase):
         sentence = "malayalam"
         self.assertTrue(palindrome(sentence))
 
+    def test_not_palindrome(self):
+        sentence = "sentence"
+        self.assertFalse(palindrome(sentence))
+
+
 class TestFreq(unittest.TestCase):
 
     def test_freq(self):
