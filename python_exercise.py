@@ -21,15 +21,14 @@ def panagram(s):
     return True
 
 def freq(s):
-    dict = {}
-    characters = list(string.printable)
-    for charactor in characters:
-        count = 0
-        for i in s:
-            if i == charactor:
-                count += 1
-                dict[i] = count
-    return dict
+    d = {}
+    for charactor in s:
+        if charactor in d:
+            d[charactor] += 1
+        else:
+            d[charactor] = 1
+    return d
+    
 
 
 
