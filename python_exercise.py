@@ -15,10 +15,8 @@ def palindrome(s):
     return s == s[::-1]
 
 def panagram(s):
-    alphabets = list(string.ascii_lowercase)
-    s = s.lower()
-    for letter in alphabets:
-        if letter not in s:
+    for letter in string.ascii_lowercase:
+        if letter not in s.lower():
             return False
     return True
 
