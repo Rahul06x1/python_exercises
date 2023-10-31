@@ -29,10 +29,11 @@ def freq(s):
             d[charactor] = 1
     return d
     
+def main():
+    fizzbizz(9)
+    print(palindrome('malayalam'))
+    print(panagram("the quick brown fox jumps over the lazy dog"))
+    print(freq("the quick brown fox jumps over the lazy dog"))
 
-
-
-fizzbizz(9)
-print(palindrome('malayalam'))
-print(panagram("the quick brown fox jumps over the lazy dog"))
-print(freq("the quick brown fox jumps over the lazy dog"))
+if __name__ == "__main__":
+    main()
