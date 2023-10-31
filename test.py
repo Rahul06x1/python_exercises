@@ -7,6 +7,8 @@ class TestPalindrome(unittest.TestCase):
         sentence = "malayalam"
         self.assertTrue(palindrome(sentence))
 
+class TestFreq(unittest.TestCase):
+
     def test_freq(self):
         sentence = "the quick brown fox jumps over the lazy dog"
         d = {'t': 2, 'h': 2, 'e': 3, ' ': 8, 'q': 1, 'u': 2, 'i': 1, 'c': 1, 
