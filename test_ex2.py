@@ -8,3 +8,6 @@ def test_add():
 
 def test_sub():
     assert evaluate("32-") == 1
+
+def test_div():
+    assert evaluate("62/") == 3
