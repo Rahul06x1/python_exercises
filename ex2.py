@@ -1,4 +1,3 @@
-import string
 def evaluate(n):
     stack = []
     if n != '':
@@ -21,3 +20,9 @@ def evaluate(n):
 
         return stack.pop()
     return False
+
+def main():
+    evaluate('23*')
+
+if __name__ == '__main__':
+    main()
