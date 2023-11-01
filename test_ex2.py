@@ -23,6 +23,6 @@ def test_symbol():
 
 def test_null():
     assert not evaluate('')
-    
+
 def test_single_value():
-    assert not evaluate('1+') 
+    assert evaluate('1+') == 1 
