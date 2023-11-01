@@ -1,6 +1,9 @@
+import string
 def evaluate(n):
     stack = []
     for i in n:
+        if i in string.ascii_letters:
+            return False
         if i in ['+', '-', '/', '*']:
             operand_1 = stack.pop()
             operand_2 = stack.pop()
