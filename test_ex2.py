@@ -14,3 +14,6 @@ def test_div():
 
 def test_mul():
     assert evaluate('23*') == 6
+
+def test_alphabet():
+    assert evaluate('23a') == False
