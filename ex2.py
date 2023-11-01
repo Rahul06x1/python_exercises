@@ -2,7 +2,7 @@ import string
 def evaluate(n):
     stack = []
     for i in n:
-        if i in string.ascii_letters:
+        if i not in '0123456789+-/*':
             return False
         if i in ['+', '-', '/', '*']:
             operand_1 = stack.pop()
