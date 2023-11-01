@@ -20,3 +20,6 @@ def test_alphabet():
 
 def test_symbol():
     assert evaluate('21@') == False
+
+def test_null():
+    assert evaluate('') == False
