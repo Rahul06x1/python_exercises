@@ -11,3 +11,6 @@ def test_sub():
 
 def test_div():
     assert evaluate("62/") == 3
+
+def test_mul():
+    assert evaluate('23*') == 6
