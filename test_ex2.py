@@ -17,3 +17,6 @@ def test_mul():
 
 def test_alphabet():
     assert evaluate('23a') == False
+
+def test_symbol():
+    assert evaluate('21@') == False
