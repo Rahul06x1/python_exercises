@@ -16,10 +16,13 @@ def test_mul():
     assert evaluate('23*') == 6
 
 def test_alphabet():
-    assert evaluate('23a') == False
+    assert not evaluate('23a')
 
 def test_symbol():
-    assert evaluate('21@') == False
+    assert not evaluate('21@')
 
 def test_null():
-    assert evaluate('') == False
+    assert not evaluate('')
+    
+def test_single_value():
+    assert not evaluate('1+') 
